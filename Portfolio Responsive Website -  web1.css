@@ -1,0 +1,360 @@
+/*üst menü kısmı ayarları start*/
+html {
+    scroll-behavior: smooth; /*yumuşak geçişler yap*/
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+img {
+    width: 100%;
+}
+
+section {
+    padding: 100px 0;
+    background: #122e44;
+
+}
+
+.section_title {
+    margin-bottom: 30px;
+}
+
+.section_title h2{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    transition: all .5s ease-in-out;
+}
+.section_title h2:hover{
+    background-color: #45CAAC;
+}
+
+/*header*/
+
+header {
+    background: rgb(44, 37, 37);
+    border-bottom: 1px solid rgba(238, 238, 238, 0.801);
+    position: fixed;
+    width: 100%;
+    z-index: 5; /*z-index içeriklerr navbar ın altına gelsin navbar sabitlensin ayarı*/
+}
+#menu_bar {
+    display: none;
+}
+
+.navbar {  
+    display: flex; /*navbar ımı yan yana getirmek için kullandığım kod*/
+    justify-content: space-between; /*navbarımın biri sağa biri sola gidecek*/
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px 0;
+}
+.nav_links {
+    display: flex; /*yazılar yan yana sıralandı.*/
+}
+
+.nav_links li a {
+    margin-left: 15px;/*yazıların aralarında boşluk bırakmak için*/
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out; /*üstüne geldiğimizde işaertli animasyon kodu*/
+}
+.nav_links li a:hover {
+    background: #24CAAC;/*üstüne geldiğimizde işaertli animasyon renk kodu*/
+
+}
+
+.logo h2 a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/*üst menü kısmı ayarları end*/
+
+/*anasayfa start*/
+.Inner_anasayfa {
+    display: flex; /*anasayfamdaki yazıyı ve resmi ortaladı*/
+    align-items: center;/*anasayfamdaki yazıyı ve resmi yan yana getirdi*/
+    justify-content: space-between; /*anasayfamdaki yazıyı ve resmi birbirine eşit aralıkta ortaladı*/
+    margin: 0 auto;
+    width: 80%;
+    color: #fff;
+}
+
+
+.child_anasayfa {
+    flex-basis: 45%
+}
+.child_anasayfa {
+    font-size: 35px;
+    color: #24CAAC;
+}
+
+.span_child {
+    color: rgb(230, 50, 209);
+}
+
+.child_anasayfa p {
+    font-size: 25px;
+    margin-bottom: 13px;
+}
+
+.child_anasayfa .btn {
+    background: #24CAAC;
+    padding: 12px 28px;
+    border-radius: 20px;
+    color: #fff;
+    border: 1px solid #24CAAC;
+    font-weight: 700;
+    cursor: pointer; /*butonun veya bir nesnenin üstüne fare ile geldiğimizde parmak simgesi çıkması için*/
+    transition: all .3s ease;
+}
+
+.btn:hover {
+    background: transparent; /*butonun üstüne geldiğimizde buton renk değiştirir*/
+    letter-spacing: 2px;
+}
+
+
+/*anasayfa end*/
+
+/*Yazılımlarım start*/
+.Innersoftware {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.Innersoftware_child {
+    flex-basis: 31%;
+    color: #fff;
+    padding: 25px 20px;
+    background: rgba(55, 66, 80, 0.201); /*hem kutucuklarını belirttik hemde renklerini*/
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all .5s ease-in;
+}
+
+.Innersoftware_child:hover {
+    border: 1px solid #24CAAC;
+}
+
+.Innersoftware_child .icon {
+    font-size: 25px;
+    color: #24CAAC;
+}
+
+.Innersoftware_child h3 {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.Innersoftware_child p {
+    font-size: 15px;
+}
+/*Yazılımlarım end*/
+
+/*Sertifikalarım start*/
+.Inner_courses {
+    display: flex;
+    flex-wrap: wrap;/*işlemlerimiz sayfayı küçülttüğümüzde alana sığması için*/
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.child_courses {
+    flex-basis: 24%;
+    color: #fff;
+    padding: 20px 10px 20px 10px;
+    border: 1px solid transparent;
+    transition: all .3s;
+    border-radius: 5px;
+}
+
+.child_courses:hover {
+    border: 1px solid #24CAAC;
+}
+
+.child_courses .detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.child_courses .detail ul {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+}
+
+.child_courses .detail ul li {
+    color: gold;
+}
+/*Sertifikalarım end*/
+
+/*Başarılar start*/
+.Inner_achivement {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   width: 80%;
+   margin: 0 auto; 
+}
+.child_echivement {
+    flex-basis: 40%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.child_achivement2 {
+    flex-basis: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.single_diteil {
+    flex-basis: 40%;
+    padding: 45px 35px;
+    color: #fff;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.single_diteil:hover {
+    transform: scale(1.03);
+}
+
+.sd_1 {
+    background: #eaa023;
+    margin-bottom: 20px;
+}
+
+.sd_2 {
+    background: #e91e63;
+    margin-bottom: 20px;
+}
+.sd_3 {
+    background: #24CAAC;
+    margin-bottom: 20px;
+}
+
+.sd_4 {
+    background: #2f363e;
+    margin-bottom: 20px;
+}
+
+
+/*Başarılar end*/
+
+/*Hakkımda start*/
+.Inner_testi {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.child_testi {
+    flex-basis: 46%;
+    margin-bottom: 30px;
+}
+
+.testi_img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+
+.testi_img img {
+    border-radius: 50%;
+}
+
+.test_highlight {
+    color: #24CAAC;
+    margin: 10px 0;  
+    display: inline-block;
+}
+
+.test_highlight:hover {
+    text-decoration: underline;
+}
+
+/*Hakkımda end*/
+
+/*İletişim start*/
+.inner_contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;   
+}
+
+.child_contact {
+    flex-basis: 45%;
+}
+
+.child_contact form {
+    padding: 50px 40px;
+    background: #2f363e;
+    border: 5px;
+}
+
+.child_contact form input,textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #24292d;
+    border: none;
+    resize: none;
+    border-radius: 25px;
+    transition: .3s ease-in;
+}
+
+.child_contact form input,textarea:focus {
+    color: #fff;
+}
+
+.child_contact form input:focus {
+    letter-spacing: 1px;
+}
+
+.child_contact form textarea:focus {
+    letter-spacing: 1px;
+}
+
+.child_contact form input:last-child {
+    margin-bottom: 0;
+    background: #24CAAC;
+    border: 1px solid #24CAAC;
+    transition: .3s;
+}
+
+.child_contact form input:last-child:hover {
+    background: transparent;
+    color: #fff;
+}
+/*İletişim end*/
